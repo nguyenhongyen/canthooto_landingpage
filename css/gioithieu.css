@@ -577,8 +577,8 @@ body {
 
 @keyframes Ani {
     0% {
-        box-shadow: 0 0 0 var(--secondary-color);
-        border: 1px solid var(--secondary-color);
+        box-shadow: 0 0 0 var(--redHover);
+        border: 1px solid var(--redHover);
         transform: scale(0)
     }
 
@@ -850,33 +850,33 @@ body {
     }
 
     .line-image-1 .circle {
-        bottom: 86px;
+        bottom: 80px;
         left: 147px;
     }
 
     .line-image-5 .circle {
-        bottom: 116px;
+        bottom: 106px;
         left: 181px;
     }
 
     .line-image-6 .circle {
-        bottom: 379px;
+        bottom: 365px;
         left: 149px;
     }
 
     .line-image-7 .circle {
-        bottom: 314px;
+        bottom: 294px;
         left: 149px;
     }
 
     .line-image-8 .circle {
         left: 214px;
-        bottom: 257px;
+        bottom: 232px;
     }
 
     .line-image-9 .circle {
-        bottom: 349px;
-        left: 132px;
+        bottom: 318px;
+        left: 133px;
     }
 
     .line-image__partner {
@@ -1026,7 +1026,7 @@ body {
     color: #202124;
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     display: block;
     line-height: normal;
     font-style: normal;
