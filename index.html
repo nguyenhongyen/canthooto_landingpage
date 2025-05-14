@@ -44,8 +44,8 @@
 	      rel="stylesheet"/>
 	<link href="https://canthooto.com/view/canthogo/assets/lib/fancyBox/jquery.fancybox.css?ver=43" type="text/css"
 	      rel="stylesheet"/>
-	<link href="https://canthooto.com/view/canthogo/assets/css/fontawesome.css?ver=43" type="text/css"
-	      rel="stylesheet"/>
+	<!--<link href="https://canthooto.com/view/canthogo/assets/css/fontawesome.css?ver=43" type="text/css"
+	      rel="stylesheet"/>-->
 	<link href="https://canthooto.com/view/canthogo/assets/lib/toastr/toastr.min.css?ver=43" type="text/css"
 	      rel="stylesheet"/>
 	<link href="https://canthooto.com/view/canthogo/assets/lib/lightSlider/css/lightslider.css?ver=43" type="text/css"
@@ -54,6 +54,9 @@
 	<link href="https://canthooto.com/view/canthogo/assets/css/style.css?ver=43" type="text/css" rel="stylesheet"/>
 	<link href="https://canthooto.com/view/canthogo/assets/css/responsive.css?ver=43" type="text/css" rel="stylesheet"/>
 	<script type="text/javascript" src="https://canthooto.com/view/canthogo/assets/lib/jquery/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+	
 	
 	<link href="css/gioithieu.css" type="text/css" rel="stylesheet"/>
 	<script src="js/gioithieu.js"></script>
@@ -202,7 +205,713 @@
 	}</style>
 </head>
 <body>
-
+<div id="headerMenu" class="sticky header">
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+				        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="https://canthooto.com/">
+					<img src="https://canthooto.com/public/upload/logo/logo3(2).png" style="height: calc(100% - 10px); margin-top: 5px">
+				</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav pull-right">
+					<li>
+						<a href="/danh-sach-dai-ly-xe-oto">
+							SHOWROOM </a>
+					</li>
+					<li>
+						<a href="/thue-xe-can-tho">
+							THUÊ XE </a>
+					</li>
+					<li class="dropdown menuFull">
+						<a href=" /bang-gia-xe-oto" class="dropdown-toggle">
+							BẢNG GIÁ XE <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<div class="container">
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Toyota" class="" href="https://canthooto.com/gia-xe-toyota-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/toyota-viet-nam-33547j2.jpg">
+										<div>
+											Giá xe Toyota
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Mazda" class="" href="https://canthooto.com/gia-xe-mazda-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/mazda-viet-nam-33536j2.jpg">
+										<div>
+											Giá xe Mazda
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Hyundai" class="" href="https://canthooto.com/gia-xe-hyundai-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/hyundai-viet-nam-33526j2.jpg">
+										<div>
+											Giá xe Hyundai
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Kia" class="" href="https://canthooto.com/gia-xe-kia-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/kia-can-tho-logo.png">
+										<div>
+											Giá xe Kia
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Honda" class="" href="https://canthooto.com/gia-xe-honda-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/honda-viet-nam-33524j2.jpg">
+										<div>
+											Giá xe Honda
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Ford" class="" href="https://canthooto.com/gia-xe-ford-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/ford-viet-nam-33523j2.jpg">
+										<div>
+											Giá xe Ford
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Chevrolet" class="" href="https://canthooto.com/gia-xe-chevrolet-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/chevrolet-viet-nam-33525j2.jpg">
+										<div>
+											Giá xe Chevrolet
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Mercedes" class=""
+									   href="https://canthooto.com/bang-gia-xe-mercedes-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/mercedes-benz-viet-nam-33539j2.jpg">
+										<div>
+											Giá xe Mercedes
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="BMW" class="" href="https://canthooto.com/gia-xe-bmw-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/bmw-viet-nam-33522j2.jpg">
+										<div>
+											Giá xe BMW
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Lexus" class="" href="https://canthooto.com/gia-xe-lexus-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/lexus-viet-nam-33533j2.jpg">
+										<div>
+											Giá xe Lexus
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Audi" class="" href="https://canthooto.com/gia-xe-audi-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/audi-viet-nam-33520j2.jpg">
+										<div>
+											Giá xe Audi
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Nissan" class="" href="https://canthooto.com/gia-xe-nissan-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/nissan-viet-nam-33535j2.jpg">
+										<div>
+											Giá xe Nissan
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Isuzu" class="" href="https://canthooto.com/gia-xe-isuzu-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/isuzu-viet-nam-33528j2.jpg">
+										<div>
+											Giá xe Isuzu
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Peugeot" class="" href="https://canthooto.com/gia-xe-peugeot-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/peugeot-viet-nam-33543j2.jpg">
+										<div>
+											Giá xe Peugeot
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Mitsubishi" class=""
+									   href="https://canthooto.com/gia-xe-mitsubishi-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/mitsubishi-viet-nam-33538j2.jpg">
+										<div>
+											Giá xe Mitsubishi
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Hino" class="" href="https://canthooto.com/gia-xe-hino-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/hino-motors-viet-nam-33549j2.jpg">
+										<div>
+											Giá xe Hino
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Suzuki" class="" href="https://canthooto.com/gia-xe-suzuki-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/suzuki-viet-nam-68819j2.jpg">
+										<div>
+											Giá xe Suzuki
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="VinFast" class="" href="https://canthooto.com/gia-xe-vinfast-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/vinfast-vietnam.jpg">
+										<div>
+											Giá xe VinFast
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="MG" class="" href="https://canthooto.com/bang-gia-xe-oto-mg-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/mg-can-tho.jpg">
+										<div>
+											Giá xe MG
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Dongben" class="" href="https://canthooto.com/gia-xe-dongben-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/dongben.png">
+										<div>
+											Giá xe Dongben
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Dongfeng" class="" href="https://canthooto.com/gia-xe-dongfeng-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/dongfeng.png">
+										<div>
+											Giá xe Dongfeng
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Subaru" class=""
+									   href="https://canthooto.com/bang-gia-xe-oto-subaru-can-tho">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/subaru.jpg">
+										<div>
+											Giá xe Subaru
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Thaco Truck " class=""
+									   href="https://canthooto.com/bang-gia-xe-oto-thaco-truck-bg247.html">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/thaco-truck.png">
+										<div>
+											Giá xe Thaco Truck
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Kia Frontier" class=""
+									   href="https://canthooto.com/bang-gia-xe-oto-kia-frontier-bg259.html">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/kia-frontier.png">
+										<div>
+											Giá xe Kia Frontier
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Fuso" class=""
+									   href="https://canthooto.com/bang-gia-xe-oto-fuso-bg266.html">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/fuso.png">
+										<div>
+											Giá xe Fuso
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Foton" class=""
+									   href="https://canthooto.com/bang-gia-xe-oto-foton-bg276.html">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/foton-1.png">
+										<div>
+											Giá xe Foton
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Forland" class=""
+									   href="https://canthooto.com/bang-gia-xe-oto-forland-bg289.html">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/forland.png">
+										<div>
+											Giá xe Forland
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 10)">
+									<a title="Samco" class=""
+									   href="https://canthooto.com/bang-gia-xe-oto-samco-bg347.html">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/samco.png">
+										<div>
+											Giá xe Samco
+										</div>
+									</a>
+								</li>
+							</div>
+						</ul>
+					</li>
+					<li class="dropdown menuFull">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+						   aria-expanded="false">
+							LOẠI XE <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<div class="container">
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Sedan" class="" href="https://canthooto.com/xe-sedan-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/sedan.png">
+										<div>
+											Sedan
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Hatchback" class="" href="https://canthooto.com/xe-hatchback-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/hatchback.png">
+										<div>
+											Hatchback
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="MPV" class="" href="https://canthooto.com/xe-mpv-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/mpv.png">
+										<div>
+											MPV
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="SUV" class="" href="https://canthooto.com/xe-suv-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/suv.png">
+										<div>
+											SUV
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Bán tải" class="" href="https://canthooto.com/xe-ban-tai-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/pickup.png">
+										<div>
+											Bán tải
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Xe tải" class="" href="https://canthooto.com/xe-oto-tai-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/truck.png">
+										<div>
+											Xe tải
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Chuyên dụng" class="" href="https://canthooto.com/xe-chuyen-dung-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/xe-chuyen-dung.png">
+										<div>
+											Chuyên dụng
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Mini-van" class="" href="https://canthooto.com/xe-mini-van-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/minivan.png">
+										<div>
+											Mini-van
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Van" class="" href="https://canthooto.com/xe-van-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/van.png">
+										<div>
+											Van
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Coupe" class="" href="https://canthooto.com/xe-coupe-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/coupe.png">
+										<div>
+											Coupe
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Convertible" class="" href="https://canthooto.com/xe-convertible-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/convertible.png">
+										<div>
+											Convertible
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Roadster" class="" href="https://canthooto.com/xe-roadster-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/roadster.png">
+										<div>
+											Roadster
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Crossover" class="" href="https://canthooto.com/xe-crossover-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/crossover.png">
+										<div>
+											Crossover
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Station Wagon" class=""
+									   href="https://canthooto.com/xe-station-wagon-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/station-wagon.png">
+										<div>
+											Station Wagon
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="SUV-Coupe" class="" href="https://canthooto.com/xe-suv-coupe-can-tho">
+										<img src="https://canthooto.com/public/upload/iconxe/suvcoupe.png">
+										<div>
+											SUV-Coupe
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull" style="width: calc(100% / 8)">
+									<a title="Khác" class="" href="https://canthooto.com/xe-khac">
+										<img src="https://canthooto.com/public/upload/iconxe/other.png">
+										<div>
+											Khác
+										</div>
+									</a>
+								</li>
+							</div>
+						</ul>
+					</li>
+					<li class="dropdown menuFull">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+						   aria-expanded="false">
+							THƯƠNG HIỆU <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<div class="container">
+								<li class="itemMenuFull">
+									<a title="Toyota" class="" href="https://canthooto.com/toyota">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/toyota-viet-nam-33547j2.jpg">
+										<div>
+											Toyota
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Mazda" class="" href="https://canthooto.com/mazda">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/mazda-viet-nam-33536j2.jpg">
+										<div>
+											Mazda
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Hyundai" class="" href="https://canthooto.com/hyundai">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/hyundai-viet-nam-33526j2.jpg">
+										<div>
+											Hyundai
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Kia" class="" href="https://canthooto.com/kia">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/kia-can-tho-logo.png">
+										<div>
+											Kia
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Honda" class="" href="https://canthooto.com/honda">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/honda-viet-nam-33524j2.jpg">
+										<div>
+											Honda
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Ford" class="" href="https://canthooto.com/ford">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/ford-viet-nam-33523j2.jpg">
+										<div>
+											Ford
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Chevrolet" class="" href="https://canthooto.com/chevrolet">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/chevrolet-viet-nam-33525j2.jpg">
+										<div>
+											Chevrolet
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Mercedes" class="" href="https://canthooto.com/mercedes">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/mercedes-benz-viet-nam-33539j2.jpg">
+										<div>
+											Mercedes
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="BMW" class="" href="https://canthooto.com/bmw">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/bmw-viet-nam-33522j2.jpg">
+										<div>
+											BMW
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Lexus" class="" href="https://canthooto.com/lexus">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/lexus-viet-nam-33533j2.jpg">
+										<div>
+											Lexus
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Audi" class="" href="https://canthooto.com/audi">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/audi-viet-nam-33520j2.jpg">
+										<div>
+											Audi
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Nissan" class="" href="https://canthooto.com/nissan">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/nissan-viet-nam-33535j2.jpg">
+										<div>
+											Nissan
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Isuzu" class="" href="https://canthooto.com/isuzu">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/isuzu-viet-nam-33528j2.jpg">
+										<div>
+											Isuzu
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Peugeot" class="" href="https://canthooto.com/peugeot">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/peugeot-viet-nam-33543j2.jpg">
+										<div>
+											Peugeot
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Mitsubishi" class="" href="https://canthooto.com/mitsubishi">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/mitsubishi-viet-nam-33538j2.jpg">
+										<div>
+											Mitsubishi
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Hino" class="" href="https://canthooto.com/hino">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/hino-motors-viet-nam-33549j2.jpg">
+										<div>
+											Hino
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Suzuki" class="" href="https://canthooto.com/suzuki">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/suzuki-viet-nam-68819j2.jpg">
+										<div>
+											Suzuki
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="VinFast" class="" href="https://canthooto.com/vinfast">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/vinfast-vietnam.jpg">
+										<div>
+											VinFast
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="MG" class="" href="https://canthooto.com/mg">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/mg-can-tho.jpg">
+										<div>
+											MG
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Dongben" class="" href="https://canthooto.com/dongben">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/dongben.png">
+										<div>
+											Dongben
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Dongfeng" class="" href="https://canthooto.com/dongfeng">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/dongfeng.png">
+										<div>
+											Dongfeng
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Subaru" class="" href="https://canthooto.com/subaru">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/subaru.jpg">
+										<div>
+											Subaru
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Thaco Truck " class="" href="https://canthooto.com/thaco-truck">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/thaco-truck.png">
+										<div>
+											Thaco Truck
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Kia Frontier" class="" href="https://canthooto.com/kia-frontier">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/kia-frontier.png">
+										<div>
+											Kia Frontier
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Fuso" class="" href="https://canthooto.com/fuso">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/fuso.png">
+										<div>
+											Fuso
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Foton" class="" href="https://canthooto.com/foton">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/foton-1.png">
+										<div>
+											Foton
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Forland" class="" href="https://canthooto.com/forland">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/forland.png">
+										<div>
+											Forland
+										</div>
+									</a>
+								</li>
+								<li class="itemMenuFull">
+									<a title="Samco" class="" href="https://canthooto.com/samco">
+										<img src="https://canthooto.com/public/upload/danhmuc/Icon-danhmuc/samco.png">
+										<div>
+											Samco
+										</div>
+									</a>
+								</li>
+							</div>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+						   aria-expanded="false">
+							CÔNG CỤ <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="/du-tinh-chi-phi">
+									Dự tính chi phí </a>
+							</li>
+							<li>
+								<a href="/cach-tinh-chi-phi-mua-xe-tra-gop">
+									Ước tính mua xe trả góp </a>
+							</li>
+							<li>
+								<a href="/so-sanh-xe">
+									So sánh xe </a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+						   aria-expanded="false">
+							DỊCH VỤ <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="https://canthooto.com/thiet-ke-website-ban-xe-o-to">
+									Thiết kế web bán xe </a>
+							</li>
+							<li>
+								<a href="https://canthooto.com/chay-quang-cao-google-ban-xe-oto">
+									Google Ads bán xe </a>
+							</li>
+							<li>
+								<a href="https://canthooto.com/bang-gia-dich-vu">
+									Đặt quảng cáo trên canthooto.com </a>
+							</li>
+							<li>
+								<a href="/cho-thue-xe-can-tho">
+									Dịch vụ cho thuê xe cần thơ </a>
+							</li>
+							<li>
+								<a href="/phu-kien-oto-can-tho">
+									Gara - phụ kiện oto Cần Thơ </a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="/bang-gia-dich-vu">
+							QUẢNG CÁO </a>
+					</li>
+					<li>
+						<a href="/gioi-thieu">
+							GIỚI THIỆU </a>
+					</li>
+					<li>
+						<a href="https://canthooto.com/contact-us">
+							LIÊN HỆ </a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</nav>
+	</div>
+</div>
 
 <main class="bg-white">
 	<div class="section-rental"
@@ -249,11 +958,12 @@
 											KINH NGHIỆM TRONG NGÀNH THIẾT KẾ WEB OTO
 										</div>
 										<div class="icon">
-											<i class="fas fa-thumbs-up"></i>
+											<i class="far fa-thumbs-up"></i>
 										</div>
 									</div>
 									<div class="body">
-										<p>Vietcore là đối tác tư vấn và xây dựng website cho các đại lý oto lớn trên toàn quốc của hầu hết các thương hiệu xe từ bình dân đến cao cấp.
+										<p>Vietcore là đối tác tư vấn và xây dựng website cho các đại lý oto lớn trên
+											toàn quốc của hầu hết các thương hiệu xe từ bình dân đến cao cấp.
 										</p>
 									</div>
 								</div>
@@ -264,11 +974,12 @@
 										
 										</div>
 										<div class="icon">
-											<i class="fal fa-users"></i>
+											<i class="fas fa-users"></i>
 										</div>
 									</div>
 									<div class="body">
-										<p>Chúng tôi có kinh nghiệm thiết kế web cho hầu hết các thương hiệu ôtô hiện nay, nên giao diện bạn nhận được là chuẩn chỉnh với yêu cầu cửa hàng
+										<p>Chúng tôi có kinh nghiệm thiết kế web cho hầu hết các thương hiệu ôtô hiện
+											nay, nên giao diện bạn nhận được là chuẩn chỉnh với yêu cầu cửa hàng
 										</p>
 									</div>
 								</div>
@@ -304,11 +1015,12 @@
 											DỮ LIỆU XE Ô TÔ CÓ SẴN VÀ ĐẦY ĐỦ
 										</div>
 										<div class="icon">
-											<i class="fal fa-star"></i>
+											<i class="far fa-star"></i>
 										</div>
 									</div>
 									<div class="body">
-										<p>Thiết kế web ô tô hoàn thành và bạn không cần mất thời gian nhập liệu, website đã có sẵn dữ liệu chuẩn các hang xe để bạn sử dụng ngay
+										<p>Thiết kế web ô tô hoàn thành và bạn không cần mất thời gian nhập liệu,
+											website đã có sẵn dữ liệu chuẩn các hang xe để bạn sử dụng ngay
 										</p>
 									</div>
 								</div>
@@ -318,11 +1030,12 @@
 											CHỨC NĂNG CHUYÊN BIỆT CHO WEB OTO
 										</div>
 										<div class="icon">
-											<i class="fal fa-building"></i>
+											<i class="far fa-building"></i>
 										</div>
 									</div>
 									<div class="body">
-										<p>Đầy đủ chức năng của một web bán xe oto chuyên nghiệp, ước tính phí lăn bánh, so sánh xe, ước tính vay trả góp,….
+										<p>Đầy đủ chức năng của một web bán xe oto chuyên nghiệp, ước tính phí lăn bánh,
+											so sánh xe, ước tính vay trả góp,….
 										</p>
 									</div>
 								</div>
@@ -964,7 +1677,137 @@
 		</div>
 	</section>
 </main>
-
+<footer id="footer-main">
+	<div class="container">
+		<div class="footer-top">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="footer-title">
+						VỀ CHÚNG TÔI
+					</div>
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="https://canthooto.com/gioi-thieu">
+								Giới Thiệu </a>
+						</li>
+						<li>
+							<a href="https://canthooto.com/thue-xe-can-tho">
+								Dịch vụ cho thuê xe Cần Thơ </a>
+						</li>
+						<li>
+							<a href="https://canthooto.com/phu-kien-oto-can-tho">
+								Gara - phụ kiện oto Cần Thơ </a>
+						</li>
+						<li>
+							<a href="https://canthooto.com/bai-viet/243/bang-gia-dang-ky-tu-van-vien-doc-quyen-hang-xe">
+								Dịch Vụ Cung Cấp </a>
+						</li>
+						<li>
+							<a href="https://canthooto.com/contact-us">
+								Liên Hệ </a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer-title">
+						TIỆN ÍCH
+					</div>
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="https://canthooto.com/du-tinh-chi-phi">
+								Dự tính chi phí lăn bánh </a>
+						</li>
+						<li>
+							<a href="https://canthooto.com/uoc-tinh-mua-xe-tra-gop">
+								Ước tính trả góp mua xe </a>
+						</li>
+						<li>
+							<a href="https://canthooto.com/bang-gia-xe-oto">
+								So sánh giá xe các hãng </a>
+						</li>
+						<li>
+							<a href="https://canthooto.com/thue-xe-can-tho">
+								Thuê Xe Cần Thơ </a>
+						</li>
+						<li>
+							<a href="https://canthooto.com/video">
+								Thư viện video </a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer-title">
+						QUY CHẾ HOẠT ĐỘNG
+					</div>
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="">
+								Giới Thiệu </a>
+						</li>
+						<li>
+							<a href="https://canthooto.com/bai-viet/149/quy-che-hoat-dong">
+								Quy chế hoạt động </a>
+						</li>
+						<li>
+							<a href="https://canthooto.com/bai-viet/148/chinh-sach-giai-quyet-tranh-chap">
+								Cơ chế giải quyết tranh chấp </a>
+						</li>
+						<li>
+							<a href="https://canthooto.com/bai-viet/147/chinh-sach-bao-mat-thong-tin">
+								Chính sách bảo mật thông tin cá nhân </a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<ul class="list-unstyled mb-0">
+						<li>
+							<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/vietcore"
+							     data-tabs="timeline" data-width="" data-height="130" data-small-header="false"
+							     data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"
+							     fb-xfbml-state="rendered"
+							     fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=713109545557165&amp;container_width=288&amp;height=130&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fvietcore&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=false&amp;small_header=false&amp;tabs=timeline&amp;width=">
+								<span style="vertical-align: bottom; width: 288px; height: 130px;">
+									<iframe name="f1e4862261f3354ff" width="1000px" height="130px"
+									        data-testid="fb:page Facebook Social Plugin"
+									        title="fb:page Facebook Social Plugin" frameborder="0"
+									        allowtransparency="true" allowfullscreen="true" scrolling="no"
+									        allow="encrypted-media"
+									        src="https://www.facebook.com/v2.10/plugins/page.php?adapt_container_width=true&amp;app_id=713109545557165&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df02b23564edc82843%26domain%3Dcanthooto.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fcanthooto.com%252Ff8482f1fe4121d2e1%26relation%3Dparent.parent&amp;container_width=288&amp;height=130&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fvietcore&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=false&amp;small_header=false&amp;tabs=timeline&amp;width="
+									        style="border: none; visibility: visible; width: 288px; height: 130px;"
+									        class=""></iframe>
+								</span></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="footer-title">Ô Tô Cần Thơ | Cần Thơ Oto | Canthooto.com</div>
+				</div>
+				<div class="col-md-12">
+					<ul>
+						<li><i class="fa fa-phone-square"></i> 0945.460.087</li>
+						<li><i class="fa fa-envelope"></i> sanoto247@gmail.com</li>
+						<li><i class="fa fa-home"></i> 202 Nguyễn Đệ, P. An Thới, Q. Bình Thủy, TP. Cần Thơ</li>
+					</ul>
+				</div>
+				<div class="col-md-12">
+					<span>Quản lý bởi Công Ty CP Công Nghệ Truyền Thông Vietcore - MST: 1801774367</span>
+				</div>
+				<div class="col-md-12 mt-3" style="margin-top: 10px">
+					<div class="text-center small text-white"
+					     style="display: flex;align-items: center;justify-content: center;">
+						Design by <a href="https://vietcore.com.vn" class="text-white fw-500"
+						             style="margin-left: 2px; margin-bottom: 0; font-size: inherit; font-weight: normal;">
+						Vietcore</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 <script type="text/javascript"
         src="https://canthooto.com/view/canthogo/assets/lib/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://canthooto.com/lib/public/js/lazyload.js"></script>
